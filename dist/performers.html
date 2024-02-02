@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/performers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Performers</title>
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .wrapper {
+            text-align: center;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the content horizontally */
+        }
+
+        .categories li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            width: 50%;
+            position: relative;
+        }
+
+        .categories li i,
+        .categories li img {
+            margin-right: 10px;
+        }
+
+        .categories li i {
+            font-size: 24px;
+        }
+
+        .categories img {
+            width: 33px;
+            height: 33px;
+            position: absolute;
+            top: 50%;
+            left: 9px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper light">
+            <header>
+                <div class="container">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="images/Weeho.png" alt="Logo">
+                        </div>
+                        <div class="profile-icon profile-small">
+                            <img src="images/profile-icon.jpeg" alt="Profile Icon">
+                        </div>
+                    </div>           
+                </div>
+            </header><br /><br /><br /><br /><br /><br />
+            <h1>Categories of performers</h1>
+
+            <div class="categories">
+                <ul>
+                    <li class="category" onclick="showPerformers('actors.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/user.png" alt="">
+                        Actor
+                    </li>
+                    <li class="category" onclick="showPerformers('comedians.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/clown.png" alt="">
+                        Comedian
+                    </li>
+                    <li class="category" onclick="showPerformers('dancers.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/dancing.png" alt="">
+                        Dancer
+                    </li>
+                    <li class="category" onclick="showPerformers('singers.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/microphone.png" alt="">
+                        Singer
+                    </li>
+                    <li class="category" onclick="showPerformers('magicians.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/magic-hat.png" alt="">
+                        Magician
+                    </li>
+                    <li class="category" onclick="showPerformers('musicians.html')">
+                        <i class="fa fa-user"></i>
+                        <img src="images/piano.png" alt="">
+                        Musician
+                    </li>
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <script src="js/performers.js"></script>
+    <script>
+        function showPerformers(category) {
+            window.location.href = category;
+        }
+    </script>
+</body>
+</html>

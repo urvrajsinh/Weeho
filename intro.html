@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Event Organize Online</title>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper light">
+            <header>
+                <div class="container">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="images/Weeho.png" alt="Logo"><br />
+                            <img src="images/about.jpeg" alt="About Image" class="about-image">
+                        </div>
+                        <div class="nav-buttons">
+                            <a href="login.html" class="book-event-btn">Book an Event</a>
+                        </div>
+                    </div>
+                    <div class="hamburger-icon">
+                        <i class="fa fa-bars"></i>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <div class="dropdown-heading">Welcome to Weeho <br> <a href="https://www.weeho.in/">www.weeho.in</a></div>
+                            <div class="dropdown-heading">Performers</div>
+                            <a href="login.html">Mandeep Singh</a>
+                            <a href="login.html">Rupali Bhattacharjee</a>
+                            <a href="login.html">Naviin Gandharv</a>
+                            <div class="dropdown-heading">Programs</div>
+                            <a>Friends Party</a>
+                            <a>Family Parties</a>
+                            <a>Family Get-together</a>
+                            <a>And Many More</a>
+                        </div>
+                    </div>              
+                </div>
+            </header>
+            <div class="showcase-area">
+                <div class="container">
+                    <div class="left">
+                        <div class="title">
+                        </div>
+                        <p class="text">
+                            We organize versatile events to avail experience of uniqueness, innovation and bring joyful time that create lifelong memorable memories. Give your live events, product launches, seminars, conferences and annual meetups
+                            a new horizon to explore the web-based platforms to connect dozens to thousands of attendees from across the globe and use interactive and immersive engagement platforms. Our sole mission is aiming towards bringing your
+                            vision into reality and creating over-lasting memories of the remarkable event.
+                        </p><br />
+                        <div class="social-icons center">
+                            <a href="https://www.facebook.com/weehoevents" class="facebook-icon" aria-label="Facebook"><i class="fa fa-facebook"></i><span class="visually-hidden">Facebook</span></a>
+                            <a href="https://www.instagram.com/weeho_events/" class="insta-icon" aria-label="Instagram"><i class="fa fa-instagram"></i><span class="visually-hidden">Instagram</span></a>
+                            <a href="https://twitter.com/Weeho_Moments" class="twitter-icon" aria-label="Twitter"><i class="fa fa-twitter"></i><span class="visually-hidden">Twitter</span></a>
+                            <a href="https://www.linkedin.com/in/weehoevents/" class="linkedin-icon" aria-label="LinkedIn"><i class="fa fa-linkedin"></i><span class="visually-hidden">LinkedIn</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <script src="js/intro.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownIcon = document.querySelector('.fa-bars');
+            var dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownIcon.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.fa-bars')) {
+                    if (dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

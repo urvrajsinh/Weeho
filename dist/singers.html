@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/singers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust as needed */
+        }
+
+        .profile-icon img {
+            border-radius: 50%;
+            max-height: 40px; /* Adjust as needed */
+        }
+
+        .singer-profile {
+            text-align: center;
+        }
+
+        .singer-profile img {
+            width: 320px; /* Set a specific width */
+            height: 320px; /* Set a specific height */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            border-radius: 50%;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            margin: 0;
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust the size as needed */
+        }
+
+        h1 {
+            flex-grow: 1;
+            text-align: center;
+            margin: 0;
+        }
+
+        .profile-icon img {
+            max-height: 50px; /* Adjust the size as needed */
+        }
+
+        .singer-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .singer-profile {
+            text-align: center;
+        }
+
+        .singer-profile img {
+            width: 320px; /* Set a specific width */
+            height: 320px; /* Set a specific height */
+            object-fit: cover; /* Maintain aspect ratio and cover container */
+            border-radius: 50%;
+        }
+
+        .singer-profile h2 {
+            margin: 10px 0 0;
+        }
+    </style>
+    <title>Singers</title>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper light">
+            <header class="header">
+                <div class="logo">
+                    <img src="images/Weeho.png" alt="Logo">
+                </div>
+                <h1>Singers</h1>
+                <div class="profile-icon profile-small">
+                    <img src="images/profile-icon.jpeg" alt="Profile Icon">
+                </div>
+            </header>
+        </div>    
+    </div><br><br><br><br><br><br>
+
+    <section class="singer-section">
+        <div class="singer-profile" onclick="redirectToProfile('mandeep.html')">
+            <img src="images/mandeep.jpg" alt="Singer 1">
+            <h2>Mandeep Singh</h2>
+        </div>
+
+        <div class="singer-profile" onclick="redirectToProfile('rupali.html')">
+            <img src="images/rupali.jpg" alt="Singer 2">
+            <h2>Rupali Bhattacharjee</h2>
+        </div>
+
+        <div class="singer-profile" onclick="redirectToProfile('naviin.html')">
+            <img src="images/naviin.jpg" alt="Singer 3">
+            <h2>Naviin Gandharv</h2>
+        </div>
+    </section>
+
+    <script src="js/singers.js"></script>
+    <script>
+        function redirectToProfile(profileURL) {
+            window.location.href = profileURL;
+        }
+    </script>
+</body>
+</html>

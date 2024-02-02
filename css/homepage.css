@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.select-menu {
+    width: 380px;
+    margin: 150px auto;
+}
+
+.select-menu .select-btn {
+    position: relative;
+    top: -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    background: #fff;
+    color: #333;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    position: relative;
+    padding: 27px 0 32px;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    max-width: 130px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+/* Update the styles for dropdown items */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: max-content;
+}
+
+.dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.showcase-area .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px; /* Adjust the margin-top as needed */
+}
+
+.showcase-area h2 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.showcase-area p {
+    font-size: 1.2em;
+    margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.hamburger-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Move the hamburger icon to the left side */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.fa-bars {
+    font-size: 80px;
+    color: #000000;
+}
+
+.copy {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    animation: appear 1s 1 both;
+}
+
+@media screen and (max-width: 768px) {
+    .showcase-area .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        grid-gap: 32px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .text {
+        font-size: 11px;
+        margin: 15px 0 7px;
+        line-height: 1.3;
+    }
+
+    .person {
+        width: 80%;
+        transform: none;
+    }
+
+    .btn {
+        padding: 5px 16px;
+    }
+
+    .hamburger-menu {
+        display: inline-block;
+        margin-right: -20px;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    .links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        right: 0;
+        top: 0;
+        background: var(--backgroundColor);
+        color: var(--lightTwo);
+        padding-top: 80px;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: 0.5s;
+    }
+
+    .links.active {
+        right: 0;
+    }
+
+    .links ul {
+        display: block;
+    }
+
+    .links li a {
+        display: inline-block;
+        padding: 27px 0;
+    }
+
+    .links li a:hover {
+        color: var(--darkOne);
+    }
+
+    .links .profile {
+        position: absolute;
+        margin-left: 30px;
+        padding-left: 0;
+        width: 50px;
+        height: 50px;
+        top: 30px;
+        left: 0;
+    }
+
+    .wrapper.active .links {
+        transform: translateX(0);
+        box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.8);
+    }
+}

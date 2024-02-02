@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/history.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Additional styles go here */
+    </style>
+    <title>Booking History</title>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div class="main">
+        <!-- Header Section -->
+        <div class="wrapper light">
+            <header class="header">
+                <div class="logo">
+                    <img src="images/Weeho.png" alt="Logo">
+                </div>
+                <div class="profile-icon profile-small">
+                    <img src="images/profile-icon.jpeg" alt="Profile Icon">
+                </div>
+            </header>
+        </div>
+        <div class="hamburger-icon">
+            <i class="fa fa-bars"></i>
+            <div class="dropdown-menu" id="dropdownMenu">
+                <div class="dropdown-heading">Welcome to Weeho <br> <a href="https://www.weeho.in/">www.weeho.in</a></div>
+                <div class="dropdown-heading">Performers</div>
+                <a href="mandeep.html">Mandeep Singh</a>
+                <a href="rupali.html">Rupali Bhattacharjee</a>
+                <a href="naviin.html">Naviin Gandharv</a>
+                <div class="dropdown-heading">Programs</div>
+                <a>Friends Party</a>
+                <a>Family Parties</a>
+                <a>Family Get-together</a>
+                <a>And Many More</a>
+            </div>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form class="sign-in-form">
+                    <h1>Booking History</h1><br>
+                    <!-- Inside your form -->
+                    <div id="historyDetails">
+                        <div class="detail">
+                            <img src="images/telephone.png" alt="">
+                            <strong>Number:</strong>
+                            <span id="userName"></span>
+                        </div><br>
+                        <div class="detail">
+                            <img src="images/location.png" alt="">
+                            <strong>City:</strong>
+                            <span id="phoneNumber"></span>
+                        </div><br>
+                        <div class="detail">
+                            <img src="images/calendar (1).png" alt="">
+                            <strong>Event date:</strong>
+                            <span id="city"></span>
+                        </div><br>
+                        <div class="detail">
+                            <img src="images/famous.png" alt="">
+                            <strong>Event:</strong>
+                            <span id="occasion"></span>
+                        </div><br>
+                        <div class="detail">
+                            <img src="images/opportunity.png" alt="">
+                            <strong>Occasion:</strong>
+                            <span id="eventName"></span>
+                        </div>
+                    </div>                                                      
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts Section -->
+    <script src="js/rupali.js"></script>
+    <script>
+        /* Additional scripts go here */
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownIcon = document.querySelector('.fa-bars');
+            var dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownIcon.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.fa-bars')) {
+                    if (dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

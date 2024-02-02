@@ -1,0 +1,131 @@
+/* Resetting some default styles for better consistency */
+body, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust as needed */
+}
+
+.profile-icon img {
+    border-radius: 50%;
+    max-height: 40px; /* Adjust as needed */
+}
+
+.singer-profile {
+    text-align: center;
+    margin: 20px;
+}
+
+.singer-profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.singer-profile h2, .about-singer h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.singer-profile h3 {
+    color: #666;
+    margin-top: 5px;
+}
+
+.singer-profile p, .about-singer p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    background-color: #F05407;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #a30f0f
+}
+
+.about-singer {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+}
+
+.about-singer video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Set the maximum width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-singer .small-video {
+    width: 100%; /* Set the width to 80% of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-singer h4 {
+    font-size: 1.2em;
+    color: #007BFF;
+    margin-top: 15px;
+}
+
+.about-singer a {
+    color: #F05407;
+    text-decoration: none;
+}
+
+.about-singer a:hover {
+    text-decoration: underline;
+}
+
+.image-section {
+    text-align: center;
+    margin-top: 20px; /* Add some space between the videos and images */
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the images vertically */
+    gap: 10px; /* Add some space between images */
+}
+
+.image-row img {
+    width: 110px; /* Set a fixed width for the images */
+    height: 110px; /* Set a fixed height for the images to make them square */
+    border-radius: 0; /* Remove any border-radius to keep them square */
+}

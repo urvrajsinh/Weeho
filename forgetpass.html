@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/forgetpass.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper light">
+            <header>
+                <div class="container">
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="images/Weeho.png" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="hamburger-icon">
+                        <i class="fa fa-bars"></i>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <div class="dropdown-heading">Welcome to Weeho <br> <a href="https://www.weeho.in/">www.weeho.in</a></div>
+                            <div class="dropdown-heading">Performers</div>
+                            <a href="#">Mandeep Singh</a>
+                            <a href="#">Rupali Bhattacharjee</a>
+                            <a href="#">Naviin Gandharv</a>
+                            <div class="dropdown-heading">Programs</div>
+                            <a>Friends Party</a>
+                            <a>Family Parties</a>
+                            <a>Family Get-together</a>
+                            <a>And Many More</a>
+                        </div>
+                    </div><br /><br />
+                    <div class="forms-container">
+                        <div class="signin-signup">
+                            <form action="#" class="sign-in-form">
+                                <img src="images/forgetpass.jpeg" alt=""><br />
+                                <h2 class="title">Forget your password ?</h2><br />
+                                <p class="p">Enter your email below to reset your password</p>
+                                <div class="input-field">
+                                    <i class="fas fa-user"></i>
+                                        <img src="images/email.png" alt="">
+                                    <input type="email " placeholder="Email">
+                                </div>
+                                <input type="submit" value="Submit" class="btn solid">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    <script src="js/forgetpass.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownIcon = document.querySelector('.fa-bars');
+            var dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownIcon.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.fa-bars')) {
+                    if (dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

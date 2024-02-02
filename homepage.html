@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Event Organize Online</title>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper light">
+            <header>
+                <div class="container">
+                    <div class="hamburger-icon" id="hamburgerIcon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="logo-container">
+                        <div class="logo">
+                            <img src="images/Weeho.png" alt="Logo">
+                        </div>
+                    </div>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <div class="dropdown-heading">Welcome to Weeho <br> <a href="https://www.weeho.in/">www.weeho.in</a></div>
+                        <div class="dropdown-heading">Performers</div>
+                        <a href="login.html">Mandeep Singh</a>
+                        <a href="login.html">Rupali Bhattacharjee</a>
+                        <a href="login.html">Naviin Gandharv</a>
+                        <div class="dropdown-heading">Programs</div>
+                        <a>Friends Party</a>
+                        <a>Family Parties</a>
+                        <a>Family Get-together</a>
+                        <a>And Many More</a>
+                    </div>              
+                </div>
+            </header>
+            <div class="showcase-area">
+                <div class="container">
+                    <h2>What Weeho Does?</h2><br>
+                    <p>Weeho organizes all types of events. Our sole <br> mission is aiming towards bringing your vision <br> into reality and creating everlasting memories <br> of the remarkable event.</p>
+                </div>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Birthday Parties</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Friends Parties</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Corporate Parties</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Personal Ceremony</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Family Get-together</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">Corporate Parties</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+            <div class="select-menu">
+                <div class="select-btn" id="select-btn">
+                    <span id="text">MICE Events</span>
+                    <ion-icon name="chevron-down-outline" class="icon-arrow"></ion-icon>
+                </div>
+                <ul class="list">
+                    <!-- Add your list items here if needed -->
+                </ul>
+            </div>
+        </div>    
+    </div>
+    <script src="js/intro.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownIcon = document.querySelector('.fa-bars');
+            var dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownIcon.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('show');
+            });
+
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.fa-bars')) {
+                    if (dropdownMenu.classList.contains('show')) {
+                        dropdownMenu.classList.remove('show');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
